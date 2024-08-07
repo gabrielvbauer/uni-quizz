@@ -24,6 +24,10 @@ const config: Config = {
         'accent-cold': '#4dc7f9',
         'accent-warm': '#F9bd22',
       },
+
+      fontFamily: {
+        asap: '"Asap Condensed"',
+      },
     },
   },
   plugins: [],

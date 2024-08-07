@@ -30,7 +30,7 @@ export function Questions() {
   }
 
   return (
-    <main className="flex flex-col flex-1">
+    <main className="flex flex-col flex-1 px-6 py-7">
       {currentQuestionIndex > 0 && (
         <button
           className="flex gap-2 font-medium"
@@ -41,7 +41,7 @@ export function Questions() {
         </button>
       )}
 
-      <div className="flex flex-1 pt-12">
+      <div className="h-full flex flex-1 pt-12 pb-12">
         <Question
           question={handleGetCurrentQuestion()}
           onSelectOption={onSelectOption}
@@ -49,7 +49,7 @@ export function Questions() {
       </div>
       {isLastQuestion ? (
         <button
-          className="h-16 flex items-center justify-center bg-accent-warm rounded-md font-semibold text-lg border-2 border-accent-warm disabled:border-white active:opacity-80 disabled:opacity-80 disabled:bg-transparent"
+          className="min-h-16 h-16 flex items-center justify-center bg-accent-warm rounded-md font-semibold text-lg border-2 border-accent-warm disabled:border-white active:opacity-80 disabled:opacity-80 disabled:bg-transparent"
           onClick={finishQuizz}
           disabled={!isCurrentQuestionAnswered}
         >
@@ -57,7 +57,7 @@ export function Questions() {
         </button>
       ) : (
         <button
-          className="h-16 flex items-center justify-center bg-accent-warm rounded-md font-semibold text-lg border-2 border-accent-warm disabled:border-white active:opacity-80 disabled:opacity-80 disabled:bg-transparent"
+          className="min-h-16 h-16 flex items-center justify-center bg-accent-warm rounded-md font-semibold text-lg border-2 border-accent-warm disabled:border-white active:opacity-80 disabled:opacity-80 disabled:bg-transparent"
           onClick={goToNextQuestion}
           disabled={!isCurrentQuestionAnswered}
         >

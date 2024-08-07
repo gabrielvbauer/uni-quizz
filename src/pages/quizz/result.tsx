@@ -15,7 +15,7 @@ export function Result() {
   }
 
   return (
-    <main className="flex flex-col flex-1 py-12">
+    <main className="h-full flex flex-col flex-1 py-12 px-6">
       <div className="flex flex-col items-center gap-4 flex-1">
         <h2 className="font-bold text-4xl">{result.character}</h2>
         <p className="font-semibold text-2xl">
